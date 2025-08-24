@@ -187,7 +187,7 @@
 
   .welcome-text {
     @apply font-canva text-portfolio-text-secondary mb-3 font-normal;
-    font-size: 50px;
+    font-size: 64px;
   }
 
   .work-text {
