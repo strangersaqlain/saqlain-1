@@ -200,7 +200,7 @@
 
   /* Footer */
   .footer {
-    @apply fixed bottom-0 left-0 right-0 bg-transparent py-3 z-50 animate-fade-in-up-delayed-2;
+    @apply fixed bottom-0 left-0 right-0 bg-transparent py-2 z-50 animate-fade-in-up-delayed-2;
   }
 
   .footer-content {
