@@ -10,7 +10,7 @@ function App() {
       {/* Hero Section */}
       <section id="hero" className="hero min-h-screen flex items-center">
         <div className="container">
-          <div className="hero-content text-left ml-[25%]">
+          <div className="hero-content text-left ml-[18%]">
             <p className="greeting-text font-raleway italic text-lg text-portfolio-text-secondary mb-2">Hello, my name is</p>
             <h2 className="main-name font-alfa text-6xl md:text-8xl text-portfolio-text-primary mb-8">Saqlain</h2>
             <div className="welcome-section">
