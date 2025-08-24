@@ -47,6 +47,10 @@ module.exports = {
         'display': ['"Alfa Slab One"', '"Rockwell"', 'serif'],
         'serif': ['Georgia', 'serif'],
         'cursive': ['"Comic Sans MS"', 'cursive', 'sans-serif'],
+        'cormorant': ['"Cormorant"', 'serif'],
+        'prata': ['"Prata"', 'serif'],
+        'raleway': ['"Raleway"', 'sans-serif'],
+        'alfa': ['"Alfa Slab One"', 'cursive'],
       },
       fontSize: {
         'xs': '11px',
@@ -104,4 +108,3 @@ module.exports = {
   },
   plugins: [],
 }
-
