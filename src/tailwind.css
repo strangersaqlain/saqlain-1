@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 /* Custom font imports */
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Cormorant:wght@700&family=Prata:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Cormorant:wght@700&family=Prata:wght@400&family=Anton:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 @import url('https://fonts.cdnfonts.com/css/hagrid');
 @import url('https://fonts.cdnfonts.com/css/the-seasons');
@@ -116,7 +116,7 @@
 
   /* Header */
   .header {
-    @apply fixed top-0 left-0 right-0 z-50 bg-black/95 backdrop-blur-md border-b border-white/10 py-4 animate-fade-in-up;
+    @apply fixed top-0 left-0 right-0 z-50 bg-black/95 backdrop-blur-md py-4 animate-fade-in-up;
   }
 
   .header-content {
@@ -132,7 +132,8 @@
   }
 
   .logo-text {
-    @apply text-xl text-portfolio-text-primary m-0 tracking-tight;
+    @apply text-portfolio-text-primary m-0 tracking-tight;
+    font-size: 32px;
   }
 
   .nav-list {
@@ -144,7 +145,8 @@
   }
 
   .nav-link {
-    @apply text-lg text-portfolio-text-secondary no-underline transition-colors duration-300 ease-in-out relative cursor-pointer;
+    @apply text-portfolio-text-secondary no-underline transition-colors duration-300 ease-in-out relative cursor-pointer;
+    font-size: 28px;
   }
 
   .nav-link:hover {
@@ -170,11 +172,13 @@
   }
 
   .greeting-text {
-    @apply font-canva text-2xl text-portfolio-text-secondary mb-4 font-normal;
+    @apply font-canva text-portfolio-text-secondary mb-4 font-normal;
+    font-size: 32px;
   }
 
   .main-name {
-    @apply font-cormorant text-[clamp(4rem,12vw,8rem)] text-portfolio-text-primary my-6 font-bold leading-[0.9] uppercase tracking-tight;
+    @apply font-cormorant text-portfolio-text-primary my-6 font-bold leading-[0.9] uppercase tracking-tight;
+    font-size: 38px;
   }
 
   .welcome-section {
@@ -182,25 +186,36 @@
   }
 
   .welcome-text {
-    @apply font-canva text-2xl text-portfolio-text-secondary mb-3 font-normal;
+    @apply font-canva text-portfolio-text-secondary mb-3 font-normal;
+    font-size: 68px;
   }
 
   .work-text {
-    @apply font-canva text-2xl text-portfolio-text-secondary m-0 font-normal relative inline-block cursor-pointer transition-colors duration-300 ease-in-out;
-  }
-
-  .work-text:hover {
-    @apply text-portfolio-text-primary;
+    @apply font-canva m-0 font-normal relative inline-block cursor-pointer;
+    font-size: 32px;
+    background: linear-gradient(90deg, theme('colors.portfolio.accent') 0%, theme('colors.portfolio.accent') 50%, theme('colors.portfolio.text-secondary') 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    transition: background-position 0.25s ease-in-out;
   }
 
   .work-text:after {
     content: '';
-    @apply absolute left-0 bottom-[-4px] w-full h-0.5 bg-portfolio-accent rounded-sm;
+    @apply absolute left-0 bottom-0 w-full h-px bg-portfolio-text-secondary;
   }
+
+  .work-text:hover {
+    background-position: 0% 0;
+  }
+
 
   /* Footer */
   .footer {
-    @apply fixed bottom-0 left-0 right-0 bg-transparent py-6 z-50 animate-fade-in-up-delayed-2;
+    @apply fixed bottom-0 left-0 right-0 bg-transparent py-2 z-50 animate-fade-in-up-delayed-2;
   }
 
   .footer-content {
@@ -221,7 +236,8 @@
   }
 
   .social-link svg {
-    @apply w-5 h-5;
+    width: 36px;
+    height: 36px;
   }
 
 
@@ -258,6 +274,10 @@
     font-family: 'Raleway', sans-serif;
   }
 
+  .font-anton {
+    font-family: 'Anton', sans-serif;
+  }
+
   /* Custom animations */
   .animate-fade-in-up {
     animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
@@ -282,37 +302,36 @@
     }
 
     .logo-text {
-      @apply text-lg;
+      font-size: 28px;
     }
 
     .nav-link {
-      @apply text-base;
+      font-size: 24px;
     }
     
           .hero {
         @apply pt-32 min-h-[calc(100vh-140px)];
       }
     
-    .greeting-text,
-    .welcome-text,
+    .greeting-text {
+      font-size: 28px;
+    }
+
     .work-text {
-      @apply text-lg;
+      font-size: 29px;
     }
-    
+
+    .welcome-text {
+      font-size: 62px;
+    }
+
     .main-name {
-      @apply text-[clamp(3rem,15vw,6rem)] my-4;
-    }
-    
-    .social-links {
-      @apply justify-center;
+      font-size: 46px;
+      @apply my-4;
     }
     
     .footer {
       @apply relative mt-8;
-    }
-    
-    .footer-content {
-      @apply justify-center;
     }
   }
 
@@ -321,14 +340,20 @@
       @apply px-3;
     }
     
-    .greeting-text,
-    .welcome-text,
-    .work-text {
-      @apply text-base;
+    .greeting-text {
+      font-size: 28px;
     }
-    
+
+    .work-text {
+      font-size: 29px;
+    }
+
+    .welcome-text {
+      font-size: 62px;
+    }
+
     .main-name {
-      @apply text-[clamp(2.5rem,18vw,4rem)];
+      font-size: 46px;
     }
     
     .social-link {
@@ -336,7 +361,8 @@
     }
     
     .social-link svg {
-      @apply w-[18px] h-[18px];
+      width: 32px;
+      height: 32px;
     }
   }
 }
