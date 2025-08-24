@@ -307,16 +307,8 @@
       @apply text-[clamp(3rem,15vw,6rem)] my-4;
     }
     
-    .social-links {
-      @apply justify-center;
-    }
-    
     .footer {
       @apply relative mt-8;
-    }
-    
-    .footer-content {
-      @apply justify-center;
     }
   }
 
