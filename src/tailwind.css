@@ -133,7 +133,7 @@
 
   .logo-text {
     @apply text-portfolio-text-primary m-0 tracking-tight;
-    font-size: 24px;
+    font-size: 32px;
   }
 
   .nav-list {
@@ -146,7 +146,7 @@
 
   .nav-link {
     @apply text-portfolio-text-secondary no-underline transition-colors duration-300 ease-in-out relative cursor-pointer;
-    font-size: 21.3px;
+    font-size: 28px;
   }
 
   .nav-link:hover {
@@ -173,7 +173,7 @@
 
   .greeting-text {
     @apply font-canva text-portfolio-text-secondary mb-4 font-normal;
-    font-size: 21.3px;
+    font-size: 28px;
   }
 
   .main-name {
@@ -192,7 +192,7 @@
 
   .work-text {
     @apply font-canva m-0 font-normal relative inline-block cursor-pointer;
-    font-size: 21.3px;
+    font-size: 30px;
     background: linear-gradient(90deg, theme('colors.portfolio.accent') 0%, theme('colors.portfolio.accent') 50%, theme('colors.portfolio.text-secondary') 50%);
     background-size: 200% 100%;
     background-position: 100% 0;
