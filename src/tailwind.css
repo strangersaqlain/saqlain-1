@@ -197,6 +197,11 @@
     transition: background-position 0.5s ease-in-out;
   }
 
+  .work-text:after {
+    content: '';
+    @apply absolute left-0 bottom-0 w-full h-px bg-portfolio-text-secondary;
+  }
+
   .work-text:hover {
     background-position: 0% 0;
   }
