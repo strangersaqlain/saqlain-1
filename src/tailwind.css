@@ -302,11 +302,11 @@
     }
 
     .logo-text {
-      @apply text-lg;
+      font-size: 21.3px;
     }
 
     .nav-link {
-      @apply text-base;
+      font-size: 18.7px;
     }
     
           .hero {
@@ -316,11 +316,12 @@
     .greeting-text,
     .welcome-text,
     .work-text {
-      @apply text-lg;
+      font-size: 21.3px;
     }
     
     .main-name {
-      @apply text-[clamp(3rem,15vw,6rem)] my-4;
+      font-size: 64px;
+      @apply my-4;
     }
     
     .footer {
@@ -336,11 +337,11 @@
     .greeting-text,
     .welcome-text,
     .work-text {
-      @apply text-base;
+      font-size: 21.3px;
     }
     
     .main-name {
-      @apply text-[clamp(2.5rem,18vw,4rem)];
+      font-size: 64px;
     }
     
     .social-link {
@@ -348,7 +349,8 @@
     }
     
     .social-link svg {
-      @apply w-[18px] h-[18px];
+      width: 33.6px;
+      height: 33.6px;
     }
   }
 }
