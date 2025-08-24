@@ -173,7 +173,7 @@
 
   .greeting-text {
     @apply font-canva text-portfolio-text-secondary mb-4 font-normal;
-    font-size: 30px;
+    font-size: 32px;
   }
 
   .main-name {
@@ -187,7 +187,7 @@
 
   .welcome-text {
     @apply font-canva text-portfolio-text-secondary mb-3 font-normal;
-    font-size: 64px;
+    font-size: 68px;
   }
 
   .work-text {
