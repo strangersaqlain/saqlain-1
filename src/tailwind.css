@@ -314,9 +314,12 @@
       }
     
     .greeting-text,
-    .welcome-text,
     .work-text {
       font-size: 21.3px;
+    }
+
+    .welcome-text {
+      font-size: 44px;
     }
     
     .main-name {
@@ -335,9 +338,12 @@
     }
     
     .greeting-text,
-    .welcome-text,
     .work-text {
       font-size: 21.3px;
+    }
+
+    .welcome-text {
+      font-size: 44px;
     }
     
     .main-name {
