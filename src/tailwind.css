@@ -313,17 +313,20 @@
         @apply pt-32 min-h-[calc(100vh-140px)];
       }
     
-    .greeting-text,
+    .greeting-text {
+      font-size: 25px;
+    }
+
     .work-text {
-      font-size: 28px;
+      font-size: 27px;
     }
 
     .welcome-text {
-      font-size: 64px;
+      font-size: 58px;
     }
-    
+
     .main-name {
-      font-size: 64px;
+      font-size: 48px;
       @apply my-4;
     }
     
