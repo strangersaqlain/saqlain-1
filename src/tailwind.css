@@ -173,12 +173,12 @@
 
   .greeting-text {
     @apply font-canva text-portfolio-text-secondary mb-4 font-normal;
-    font-size: 28px;
+    font-size: 30px;
   }
 
   .main-name {
     @apply font-cormorant text-portfolio-text-primary my-6 font-bold leading-[0.9] uppercase tracking-tight;
-    font-size: 40px;
+    font-size: 38px;
   }
 
   .welcome-section {
@@ -192,7 +192,7 @@
 
   .work-text {
     @apply font-canva m-0 font-normal relative inline-block cursor-pointer;
-    font-size: 30px;
+    font-size: 32px;
     background: linear-gradient(90deg, theme('colors.portfolio.accent') 0%, theme('colors.portfolio.accent') 50%, theme('colors.portfolio.text-secondary') 50%);
     background-size: 200% 100%;
     background-position: 100% 0;
