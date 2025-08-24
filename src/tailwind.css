@@ -123,8 +123,16 @@
     @apply flex items-center justify-between;
   }
 
+  .logo {
+    @apply flex items-center;
+  }
+
+  .nav {
+    @apply ml-auto;
+  }
+
   .logo-text {
-    @apply font-hagrid text-xl text-portfolio-text-primary m-0 tracking-tight;
+    @apply text-xl text-portfolio-text-primary m-0 tracking-tight;
   }
 
   .nav-list {
@@ -240,7 +248,14 @@
 
   .font-cormorant {
     font-family: 'Cormorant', serif;
-    font-weight: 700;
+  }
+
+  .font-prata {
+    font-family: 'Prata', serif;
+  }
+
+  .font-raleway {
+    font-family: 'Raleway', sans-serif;
   }
 
   /* Custom animations */
@@ -261,19 +276,15 @@
     .header {
       @apply py-3;
     }
-    
-    .header-content {
-      @apply flex-col gap-4;
-    }
-    
+
     .nav-list {
       @apply gap-5;
     }
-    
+
     .logo-text {
       @apply text-lg;
     }
-    
+
     .nav-link {
       @apply text-base;
     }
