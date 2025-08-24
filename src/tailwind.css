@@ -193,10 +193,6 @@
     @apply text-portfolio-text-primary;
   }
 
-  .work-text:after {
-    content: '';
-    @apply absolute left-0 bottom-[-4px] w-full h-0.5 bg-portfolio-accent rounded-sm;
-  }
 
   /* Footer */
   .footer {
