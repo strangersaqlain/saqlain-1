@@ -5,7 +5,7 @@ const Footer = () => {
     {
       name: 'LinkedIn',
       url: 'https://linkedin.com',
-      iconClass: 'fa-brands fa-square-linkedin'
+      iconClass: 'fa-brands fa-linkedin'
     },
     {
       name: 'GitHub',
