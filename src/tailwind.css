@@ -345,7 +345,7 @@
     }
 
     .social-links {
-      @apply gap-4;
+      @apply gap-4 ml-3;
     }
 
     .social-link {
