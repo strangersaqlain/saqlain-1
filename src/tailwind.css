@@ -237,7 +237,7 @@
   }
 
   .social-link:hover {
-    @apply bg-portfolio-accent -translate-y-1 shadow-lg;
+    @apply -translate-y-1 shadow-lg;
     box-shadow: 0 8px 20px rgba(255, 69, 0, 0.3);
     transform: translateY(-4px) scale(1.05);
   }
