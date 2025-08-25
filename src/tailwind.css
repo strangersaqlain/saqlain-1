@@ -373,9 +373,9 @@
     .main-name {
       font-size: 46px;
     }
-    
+
     .social-link {
-      @apply w-10 h-10;
+      @apply w-12 h-12;
     }
     
   }
