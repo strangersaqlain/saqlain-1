@@ -220,7 +220,7 @@
   }
 
   .footer-content {
-    @apply flex justify-start;
+    @apply flex justify-start items-center;
   }
 
   .social-links {
