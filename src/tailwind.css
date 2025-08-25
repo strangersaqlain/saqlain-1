@@ -341,7 +341,15 @@
     }
     
     .footer {
-      @apply relative mt-8;
+      @apply relative mt-8 py-4;
+    }
+
+    .social-links {
+      @apply gap-4;
+    }
+
+    .social-link {
+      @apply w-10 h-10;
     }
   }
 
