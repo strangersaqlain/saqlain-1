@@ -35,7 +35,7 @@ const Footer = () => {
                 className="social-link"
                 aria-label={link.name}
               >
-                {link.icon}
+                <FontAwesomeIcon icon={link.icon} size="2x" />
               </a>
             ))}
           </div>
