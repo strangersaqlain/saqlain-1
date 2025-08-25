@@ -38,6 +38,7 @@ const Footer = () => {
               </a>
             ))}
           </div>
+          <CookieNotice />
         </div>
       </div>
     </footer>
