@@ -260,10 +260,11 @@
   }
 
   .learn-more-link {
-    @apply bg-transparent border-none cursor-pointer p-0 underline transition-colors duration-250 ease-in-out;
+    @apply bg-transparent border-none cursor-pointer p-0 underline;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     color: #ffffff;
+    transition: color 250ms ease-in-out;
   }
 
   .learn-more-link:hover {
