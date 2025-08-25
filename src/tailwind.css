@@ -233,18 +233,30 @@
   }
 
   .social-link svg {
-    color: white;
-    transition: color 300ms ease-in-out;
+    color: white !important;
+    fill: currentColor !important;
+    transition: all 300ms ease-in-out;
+  }
+
+  .social-link svg path {
+    fill: currentColor !important;
+    transition: fill 300ms ease-in-out;
   }
 
   .social-link:hover {
     @apply bg-portfolio-accent -translate-y-1 shadow-lg;
     box-shadow: 0 8px 20px rgba(255, 69, 0, 0.3);
     transform: translateY(-4px) scale(1.05);
+    color: white !important;
   }
 
   .social-link:hover svg {
-    color: white;
+    color: white !important;
+    fill: white !important;
+  }
+
+  .social-link:hover svg path {
+    fill: white !important;
   }
 
   /* Keyframes for animations */
