@@ -1,23 +1,21 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
   const socialLinks = [
     {
       name: 'LinkedIn',
       url: 'https://linkedin.com',
-      icon: faLinkedin
+      iconClass: 'fa-brands fa-square-linkedin'
     },
     {
       name: 'GitHub',
       url: 'https://github.com',
-      icon: faGithub
+      iconClass: 'fa-brands fa-github'
     },
     {
       name: 'Twitter',
       url: 'https://twitter.com',
-      icon: faTwitter
+      iconClass: 'fa-brands fa-twitter'
     }
   ];
 
