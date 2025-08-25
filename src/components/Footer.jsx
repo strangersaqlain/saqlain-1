@@ -1,4 +1,5 @@
 import React from 'react';
+import CookieNotice from './CookieNotice';
 
 const Footer = () => {
   const socialLinks = [
