@@ -429,6 +429,18 @@
     .social-link {
       @apply w-12 h-12;
     }
+
+    .cookie-notice {
+      @apply ml-6;
+    }
+
+    .cookie-text, .learn-more-link {
+      font-size: 12px;
+    }
+
+    .cookie-popup {
+      @apply max-w-sm mx-3;
+    }
   }
 
   @screen sm {
