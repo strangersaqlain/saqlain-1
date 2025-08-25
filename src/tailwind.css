@@ -229,7 +229,8 @@
   }
 
   .social-link {
-    @apply flex items-center justify-center w-14 h-14 bg-white/10 rounded-full transition-all duration-250 ease-in-out no-underline backdrop-blur-md border border-white/20;
+    @apply flex items-center justify-center w-14 h-14 bg-white/10 rounded-full no-underline backdrop-blur-md border border-white/20;
+    transition: all 250ms ease-in-out;
   }
 
   .social-link i {
