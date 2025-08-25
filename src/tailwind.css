@@ -220,15 +220,15 @@
   }
 
   .footer-content {
-    @apply flex justify-center;
+    @apply flex justify-start;
   }
 
   .social-links {
-    @apply flex gap-6 items-center;
+    @apply flex gap-6 items-center ml-4;
   }
 
   .social-link {
-    @apply flex items-center justify-center w-12 h-12 bg-white/10 rounded-full text-white transition-all duration-300 ease-in-out no-underline backdrop-blur-md border border-white/20;
+    @apply flex items-center justify-center w-14 h-14 bg-white/10 rounded-full text-white transition-all duration-300 ease-in-out no-underline backdrop-blur-md border border-white/20;
   }
 
   .social-link:hover {
