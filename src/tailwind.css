@@ -215,24 +215,38 @@
 
   /* Footer */
   .footer {
-    @apply fixed bottom-0 left-0 right-0 bg-transparent py-2 z-50 animate-fade-in-up-delayed-2;
+    @apply fixed bottom-0 left-0 right-0 bg-transparent py-6 z-50;
+    animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.4s both;
   }
 
   .footer-content {
-    @apply flex justify-start;
+    @apply flex justify-center;
   }
 
   .social-links {
-    @apply flex gap-5;
+    @apply flex gap-6 items-center;
   }
 
   .social-link {
-    @apply flex items-center justify-center w-11 h-11 bg-white/10 rounded-full text-white transition-all duration-300 ease-in-out no-underline backdrop-blur-md border border-white/10;
+    @apply flex items-center justify-center w-12 h-12 bg-white/10 rounded-full text-white transition-all duration-300 ease-in-out no-underline backdrop-blur-md border border-white/20;
   }
 
   .social-link:hover {
-    @apply bg-portfolio-accent text-white -translate-y-0.5 shadow-lg;
+    @apply bg-portfolio-accent text-white -translate-y-1 shadow-lg;
     box-shadow: 0 8px 20px rgba(255, 69, 0, 0.3);
+    transform: translateY(-4px) scale(1.05);
+  }
+
+  /* Keyframes for animations */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
 
