@@ -215,7 +215,7 @@
 
   /* Footer */
   .footer {
-    @apply fixed bottom-0 left-0 right-0 bg-transparent py-3 z-50;
+    @apply fixed bottom-0 left-0 right-0 bg-transparent py-1 z-50;
     animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.4s both;
   }
 
