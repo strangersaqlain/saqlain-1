@@ -224,7 +224,7 @@
   }
 
   .social-links {
-    @apply flex gap-6 items-center ml-4;
+    @apply flex gap-8 items-center ml-4;
   }
 
   .social-link {
