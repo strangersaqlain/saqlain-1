@@ -1,10 +1,23 @@
 import React from 'react';
 import Header from './components/Header.jsx';
 import Footer from './components/Footer.jsx';
+import Galaxy from './components/Galaxy.jsx';
 
 function App() {
   return (
     <div className="min-h-screen">
+      {/* Galaxy Background */}
+      <div className="fixed inset-0 z-0 pointer-events-none">
+        <Galaxy
+          mouseRepulsion={true}
+          mouseInteraction={true}
+          density={1.5}
+          glowIntensity={0.5}
+          saturation={0.8}
+          hueShift={240}
+        />
+      </div>
+
       <Header />
       
       {/* Hero Section */}
