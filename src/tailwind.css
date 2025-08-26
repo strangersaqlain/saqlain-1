@@ -3,11 +3,7 @@
 @tailwind utilities;
 
 /* Custom font imports */
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Cormorant:wght@700&family=Prata:wght@400&family=Anton:wght@400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
-@import url('https://fonts.cdnfonts.com/css/hagrid');
-@import url('https://fonts.cdnfonts.com/css/the-seasons');
-@import url('https://fonts.cdnfonts.com/css/canva-sans');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Cormorant:wght@700&family=Prata:wght@400&family=Anton:wght@400&family=Inter:wght@400;500;600&family=Raleway:ital,wght@0,400;1,400&display=swap');
 
 /* Base styles */
 @layer base {
@@ -164,21 +160,25 @@
 
   /* Hero Section */
   .hero {
-    @apply flex-1 flex items-center justify-center min-h-screen py-8 text-center;
+    @apply flex-1 flex items-center justify-center min-h-screen py-8 text-center relative z-20;
+    pointer-events: none;
   }
 
   .hero-content {
     @apply max-w-4xl mx-auto animate-fade-in-up-delayed;
+    pointer-events: none;
   }
 
   .greeting-text {
     @apply font-canva text-portfolio-text-secondary mb-4 font-normal;
     font-size: 32px;
+    pointer-events: auto;
   }
 
   .main-name {
     @apply font-cormorant text-portfolio-text-primary my-6 font-bold leading-[0.9] uppercase tracking-tight;
     font-size: 38px;
+    pointer-events: auto;
   }
 
   .welcome-section {
@@ -188,6 +188,7 @@
   .welcome-text {
     @apply font-canva text-portfolio-text-secondary mb-3 font-normal;
     font-size: 68px;
+    pointer-events: auto;
   }
 
   .work-text {
@@ -201,6 +202,7 @@
     -webkit-text-fill-color: transparent;
     color: transparent;
     transition: background-position 0.25s ease-in-out;
+    pointer-events: auto;
   }
 
   .work-text:after {
@@ -220,7 +222,7 @@
   }
 
   .footer-content {
-    @apply flex justify-start items-center;
+    @apply flex items-center justify-between;
   }
 
   .social-links {
@@ -239,17 +241,17 @@
 
   .social-link:hover {
     @apply -translate-y-1 shadow-lg;
-    box-shadow: 0 8px 20px rgba(255, 69, 0, 0.3);
+    box-shadow: 0 8px 20px rgba(124, 58, 237, 0.3);
     transform: translateY(-4px) scale(1.05);
   }
 
   .social-link:hover i {
-    color: #ff4500 !important;
+    color: #7c3aed !important;
   }
 
   /* Cookie Notice Styles */
   .cookie-notice {
-    @apply ml-8;
+    @apply ml-0;
   }
 
   .cookie-text {
@@ -268,7 +270,7 @@
   }
 
   .learn-more-link:hover {
-    color: #ff4500;
+    color: #7c3aed;
   }
 
   /* Cookie Popup Styles */
@@ -336,15 +338,15 @@
 @layer utilities {
   /* Custom font families */
   .font-hagrid {
-    font-family: 'Hagrid', sans-serif;
+    font-family: 'Inter', 'Arial Black', sans-serif;
   }
 
   .font-seasons {
-    font-family: 'The Seasons', sans-serif;
+    font-family: 'Cormorant', 'Georgia', serif;
   }
 
   .font-canva {
-    font-family: 'Canva Sans', sans-serif;
+    font-family: 'Inter', 'Helvetica Neue', sans-serif;
   }
 
   .font-alfa {
@@ -433,7 +435,7 @@
     }
 
     .cookie-notice {
-      @apply ml-6;
+      @apply ml-0;
     }
 
     .cookie-text, .learn-more-link {
