@@ -9,7 +9,8 @@ function App() {
       {/* Galaxy Background */}
       <div className="fixed inset-0 z-0">
         <Galaxy
-          mouseRepulsion={true}
+          mouseAttraction={true}
+          mouseRepulsion={false}
           mouseInteraction={true}
           density={1.5}
           glowIntensity={0.5}
