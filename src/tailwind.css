@@ -198,6 +198,7 @@
     -webkit-text-fill-color: transparent;
     color: transparent;
     transition: background-position 0.25s ease-in-out;
+    pointer-events: auto;
   }
 
   .work-text:after {
