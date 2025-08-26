@@ -85,6 +85,9 @@ module.exports = {
         'fade-in-up-delayed': 'fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both',
         'fade-in-up-delayed-2': 'fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.4s both',
         'shine': 'shine 1.75s linear infinite',
+        'dot-fill-1': 'dotFill1 3s infinite',
+        'dot-fill-2': 'dotFill2 3s infinite',
+        'dot-fill-3': 'dotFill3 3s infinite',
       },
       keyframes: {
         fadeInUp: {
