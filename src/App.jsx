@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="min-h-screen">
       {/* Galaxy Background */}
-      <div className="fixed inset-0 z-0 pointer-events-none">
+      <div className="fixed inset-0 z-0">
         <Galaxy
           mouseRepulsion={true}
           mouseInteraction={true}
