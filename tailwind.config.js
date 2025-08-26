@@ -14,8 +14,8 @@ module.exports = {
           'bg': '#000000',
           'text-primary': '#ffffff',
           'text-secondary': '#cccccc',
-          'accent': '#300030',
-          'accent-hover': '#300030',
+          'accent': '#680840',
+          'accent-hover': '#680840',
         },
         'teal': {
           300: 'rgba(50, 184, 198, 1)',
