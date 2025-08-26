@@ -166,6 +166,7 @@
 
   .hero-content {
     @apply max-w-4xl mx-auto animate-fade-in-up-delayed;
+    pointer-events: none;
   }
 
   .greeting-text {
