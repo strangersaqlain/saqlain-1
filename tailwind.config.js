@@ -104,6 +104,27 @@ module.exports = {
           '0%': { 'background-position': '100%' },
           '100%': { 'background-position': '-100%' },
         },
+        dotFill1: {
+          '0%, 10%': { color: 'white' },
+          '10%, 20%': { color: '#FACC15' },
+          '20%, 60%': { color: 'white' },
+          '60%, 70%': { color: '#FACC15' },
+          '70%, 100%': { color: 'white' },
+        },
+        dotFill2: {
+          '0%, 15%': { color: 'white' },
+          '15%, 25%': { color: '#FACC15' },
+          '25%, 65%': { color: 'white' },
+          '65%, 75%': { color: '#FACC15' },
+          '75%, 100%': { color: 'white' },
+        },
+        dotFill3: {
+          '0%, 20%': { color: 'white' },
+          '20%, 30%': { color: '#FACC15' },
+          '30%, 70%': { color: 'white' },
+          '70%, 80%': { color: '#FACC15' },
+          '80%, 100%': { color: 'white' },
+        },
       },
       backdropBlur: {
         'xs': '2px',
