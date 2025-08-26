@@ -262,6 +262,7 @@ export default function Galaxy({
         uGlowIntensity: { value: glowIntensity },
         uSaturation: { value: saturation },
         uMouseRepulsion: { value: mouseRepulsion },
+        uMouseAttraction: { value: mouseAttraction },
         uTwinkleIntensity: { value: twinkleIntensity },
         uRotationSpeed: { value: rotationSpeed },
         uRepulsionStrength: { value: repulsionStrength },
