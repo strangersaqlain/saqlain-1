@@ -28,6 +28,7 @@ uniform vec2 uMouse;
 uniform float uGlowIntensity;
 uniform float uSaturation;
 uniform bool uMouseRepulsion;
+uniform bool uMouseAttraction;
 uniform float uTwinkleIntensity;
 uniform float uRotationSpeed;
 uniform float uRepulsionStrength;
