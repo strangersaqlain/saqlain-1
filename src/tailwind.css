@@ -220,7 +220,7 @@
   }
 
   .footer-content {
-    @apply flex justify-start items-center;
+    @apply flex items-center justify-between;
   }
 
   .social-links {
@@ -249,7 +249,7 @@
 
   /* Cookie Notice Styles */
   .cookie-notice {
-    @apply ml-8;
+    @apply ml-0;
   }
 
   .cookie-text {
@@ -433,7 +433,7 @@
     }
 
     .cookie-notice {
-      @apply ml-6;
+      @apply ml-0;
     }
 
     .cookie-text, .learn-more-link {
