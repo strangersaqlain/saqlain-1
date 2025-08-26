@@ -84,6 +84,7 @@ module.exports = {
         'fade-in-up': 'fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) both',
         'fade-in-up-delayed': 'fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both',
         'fade-in-up-delayed-2': 'fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.4s both',
+        'shine': 'shine 3s linear infinite',
       },
       keyframes: {
         fadeInUp: {
@@ -96,6 +97,10 @@ module.exports = {
             transform: 'translateY(0)',
           },
         },
+        shine: {
+          '0%': { 'background-position': '100%' },
+          '100%': { 'background-position': '-100%' },
+        },
       },
       backdropBlur: {
         'xs': '2px',
@@ -104,4 +109,3 @@ module.exports = {
   },
   plugins: [],
 }
-
