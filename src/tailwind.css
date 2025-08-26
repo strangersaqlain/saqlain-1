@@ -332,15 +332,15 @@
 @layer utilities {
   /* Custom font families */
   .font-hagrid {
-    font-family: 'Hagrid', sans-serif;
+    font-family: 'Inter', 'Arial Black', sans-serif;
   }
 
   .font-seasons {
-    font-family: 'The Seasons', sans-serif;
+    font-family: 'Cormorant', 'Georgia', serif;
   }
 
   .font-canva {
-    font-family: 'Canva Sans', sans-serif;
+    font-family: 'Inter', 'Helvetica Neue', sans-serif;
   }
 
   .font-alfa {
