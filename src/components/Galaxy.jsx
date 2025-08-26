@@ -134,6 +134,11 @@ void main() {
     float centerDist = length(uv - centerUV);
     vec2 repulsion = normalize(uv - centerUV) * (uAutoCenterRepulsion / (centerDist + 0.1));
     uv += repulsion * 0.05;
+  } else if (uMouseAttraction) {
+    vec2 mousePosUV = (uMouse * uResolution.xy - focalPx) / uResolution.y;
+    float mouseDist = length(uv - mousePosUV);
+    vec2 attraction = normalize(mousePosUV - uv) * (uRepulsionStrength / (mouseDist + 0.1));
+    uv += attraction * 0.05 * uMouseActiveFactor;
   } else if (uMouseRepulsion) {
     vec2 mousePosUV = (uMouse * uResolution.xy - focalPx) / uResolution.y;
     float mouseDist = length(uv - mousePosUV);
