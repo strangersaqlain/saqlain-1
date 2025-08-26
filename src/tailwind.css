@@ -172,11 +172,13 @@
   .greeting-text {
     @apply font-canva text-portfolio-text-secondary mb-4 font-normal;
     font-size: 32px;
+    pointer-events: auto;
   }
 
   .main-name {
     @apply font-cormorant text-portfolio-text-primary my-6 font-bold leading-[0.9] uppercase tracking-tight;
     font-size: 38px;
+    pointer-events: auto;
   }
 
   .welcome-section {
@@ -186,6 +188,7 @@
   .welcome-text {
     @apply font-canva text-portfolio-text-secondary mb-3 font-normal;
     font-size: 68px;
+    pointer-events: auto;
   }
 
   .work-text {
