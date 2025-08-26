@@ -161,6 +161,7 @@
   /* Hero Section */
   .hero {
     @apply flex-1 flex items-center justify-center min-h-screen py-8 text-center relative z-20;
+    pointer-events: none;
   }
 
   .hero-content {
