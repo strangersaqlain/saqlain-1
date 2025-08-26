@@ -204,11 +204,18 @@ export default function Galaxy({
   useEffect(() => {
     if (!ctnDom.current) return;
     const ctn = ctnDom.current;
-    const renderer = new Renderer({
-      alpha: transparent,
-      premultipliedAlpha: false,
-    });
-    const gl = renderer.gl;
+
+    try {
+      const renderer = new Renderer({
+        alpha: transparent,
+        premultipliedAlpha: false,
+      });
+      const gl = renderer.gl;
+
+      if (!gl) {
+        console.error('WebGL not supported');
+        return;
+      }
 
     if (transparent) {
       gl.enable(gl.BLEND);
@@ -317,16 +324,22 @@ export default function Galaxy({
       ctn.addEventListener("mouseleave", handleMouseLeave);
     }
 
-    return () => {
-      cancelAnimationFrame(animateId);
-      window.removeEventListener("resize", resize);
-      if (mouseInteraction) {
-        ctn.removeEventListener("mousemove", handleMouseMove);
-        ctn.removeEventListener("mouseleave", handleMouseLeave);
-      }
-      ctn.removeChild(gl.canvas);
-      gl.getExtension("WEBGL_lose_context")?.loseContext();
-    };
+      return () => {
+        cancelAnimationFrame(animateId);
+        window.removeEventListener("resize", resize);
+        if (mouseInteraction) {
+          ctn.removeEventListener("mousemove", handleMouseMove);
+          ctn.removeEventListener("mouseleave", handleMouseLeave);
+        }
+        if (gl.canvas && ctn.contains(gl.canvas)) {
+          ctn.removeChild(gl.canvas);
+        }
+        gl.getExtension("WEBGL_lose_context")?.loseContext();
+      };
+    } catch (error) {
+      console.error('Galaxy WebGL Error:', error);
+      return () => {};
+    }
   }, [
     focal,
     rotation,
