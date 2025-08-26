@@ -1,38 +1,27 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 const CookieNotice = () => {
   const [showPopup, setShowPopup] = useState(false);
-  const [showNotice, setShowNotice] = useState(true);
-
-  useEffect(() => {
-    // Check if user has already accepted cookies
-    const cookiesAccepted = localStorage.getItem('cookiesAccepted');
-    if (cookiesAccepted === 'true') {
-      setShowNotice(false);
-    }
-  }, []);
 
   const handleLearnMoreClick = () => {
     setShowPopup(true);
   };
 
   const handleAccept = () => {
-    localStorage.setItem('cookiesAccepted', 'true');
+    try {
+      localStorage.setItem('cookiesAccepted', 'true');
+    } catch (e) {
+      // ignore storage errors
+    }
     setShowPopup(false);
-    setShowNotice(false);
   };
 
   const handleClosePopup = () => {
     setShowPopup(false);
   };
 
-  if (!showNotice) {
-    return null;
-  }
-
   return (
     <>
-      {/* Cookie Notice Text */}
       <div className="cookie-notice">
         <span className="cookie-text">
           This website uses cookies{' '}
@@ -45,7 +34,6 @@ const CookieNotice = () => {
         </span>
       </div>
 
-      {/* Popup Modal */}
       {showPopup && (
         <div className="cookie-popup-overlay" onClick={handleClosePopup}>
           <div className="cookie-popup" onClick={(e) => e.stopPropagation()}>
