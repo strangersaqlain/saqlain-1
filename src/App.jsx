@@ -33,7 +33,7 @@ function App() {
                 I welcome you to see
               </p>
               <p className="work-text font-raleway italic text-portfolio-text-secondary font-semibold underline cursor-pointer hover:text-portfolio-text-primary">
-                my work
+                <ShinyText text="my work" speed={3} />
               </p>
             </div>
           </div>
