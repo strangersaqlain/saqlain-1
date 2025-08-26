@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './components/Header.jsx';
 import Footer from './components/Footer.jsx';
 import Galaxy from './components/Galaxy.jsx';
+import ShinyText from './components/ShinyText.jsx';
 
 function App() {
   return (
