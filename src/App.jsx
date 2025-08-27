@@ -4,6 +4,7 @@ import Footer from './components/Footer.jsx';
 import Galaxy from './components/Galaxy.jsx';
 import ShinyText from './components/ShinyText.jsx';
 import Preloader from './components/Preloader.jsx';
+import CustomCursor from './components/CustomCursor.jsx';
 
 function App() {
   const [loading, setLoading] = useState(true);
