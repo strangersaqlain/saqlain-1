@@ -23,6 +23,8 @@ function App() {
 
   return (
     <div className="min-h-screen">
+      <CustomCursor />
+
       {/* Galaxy Background */}
       <div className="fixed inset-0 z-0">
         <Galaxy
